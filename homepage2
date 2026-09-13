@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar | Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="Navbar">
+        <a href="#Services" class="nav-link">Services</a>
+        <a href="#About" class="nav-link">About</a>
+        <a href="#Contact" class="nav-link">Contact</a>
+        <a href="#Extra" class="nav-link">Extra</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="content">
+        <img src="philippine.jpg" alt="Philippines" style="width:400px; height:350px;">
+        <div>
+            <h1>A Taste Of <span class="accent">Philippines</span></h1>
+            <p>Filipino cooking is a table shaped by trade winds and colonization, island geography,
+                and generations of home cooks making do with what the land and sea provided. Malay,
+                Chinese, Spanish, and American influences layer over a native foundation of rice, fish
+                sauce, vinegar, and coconut — producing a cuisine that leans sour, salty, and savory
+                rather than sweet or heavily spiced. Every region carries its own version of the
+                national table: Luzon's love of vinegar and soy, the Visayas' grilled and roasted meats,
+                Mindanao's coconut and chili-forward dishes shaped by trade with nearby Southeast Asia.
+                What follows is a small selection of the dishes that define it.</p>
+            <a href="index.html" class="btn">See More...</a>
+            <a href="FAIL.html" class="btn">Learn</a>
+        </div>
+    </div>
+</section>
+
+<section class="hero">
+    <div class="content">
+        <img src="jap.jfif" alt="Japan" style="width:400px; height:350px;">
+        <div>
+            <h1>A Taste Of <span class="accent">Japan</span></h1>
+            <p>Japanese cooking is built on restraint — the idea that a dish should let its main
+                ingredient speak, not cover it up. Dashi, a broth of kombu and bonito flakes, forms
+                the quiet backbone of countless dishes, while rice and soy sauce tie regional
+                cuisines together from Hokkaido's seafood to Kyushu's pork-heavy ramen. Seasonality
+                guides the menu as much as flavor does, and presentation is treated as part of the
+                cooking itself. What follows is a small selection of the dishes that define it.</p>
+            <a href="index.html" class="btn">See More...</a>
+            <a href="FAIL.html" class="btn">Learn</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
