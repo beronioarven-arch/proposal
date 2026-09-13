@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=Manrope:wght@400;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url(vegetables-set-left-black-slate.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Manrope', sans-serif;
+    color: #FFF6E9;
+    margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- header / navbar ---------- */
+.header {
+   padding: 20px 6vw;
+   background: linear-gradient(to right, #38393a, #e27114);
+}
+
+.Navbar{
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.nav-link{
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #FFF6E9;
+  opacity: 0.85;
+}
+
+.nav-link:hover{
+  opacity: 1;
+  color: #1B2117;
+}
+
+/* ---------- hero / country sections ---------- */
+.hero{
+  position: relative;
+  padding: 60px 6vw;
+  border-bottom: 2px solid #E8951E;
+}
+
+.hero:last-of-type{
+  border-bottom: none;
+}
+
+.eyebrow{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,246,233,0.18);
+  color: #E8951E;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: #fff;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    text-align: left;
+    margin: 0 0 20px;
+}
+
+.accent{
+  color: #E8951E;
+  display: block;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+img {
+    border-radius: 20px;
+    margin: 0;
+    flex-shrink: 0;
+    box-shadow: 0 20px 40px -12px rgba(0,0,0,0.6);
+}
+
+.content img{
+  border: 4px solid rgba(255,246,233,0.15);
+  border-radius: 20px 30% 40%;
+  box-shadow: 0 20px 40px -12px rgba(0,0,0,0.6);
+}
+
+p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: left;
+    color: rgba(255,246,233,0.88);
+    width: 100%;
+    max-width: 550px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 25px 30px;
+    border-radius: 16px;
+    backdrop-filter: blur(2px);
+}
+
+/* ---------- buttons ---------- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(0,0,0,0.35);
+    color: #FFF6E9;
+    border: 1.5px solid rgba(255,246,233,0.18);
+    padding: 15px 28px;
+    font-size: 0.98rem;
+    border-radius: 999px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-weight: 700;
+    transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover {
+    border-color: #E8951E;
+    color: #E8951E;
+    transform: translateY(-2px);
+}
+
+.btn-primary{
+  background: #C1440E;
+  border-color: #C1440E;
+  color: #fff;
+  box-shadow: 0 10px 24px -8px rgba(193,68,14,0.65);
+}
+
+.btn-primary:hover{
+  border-color: #C1440E;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ---------- page2 / recipe page ---------- */
+.page2 {
+    background-image: url("foodblogbackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.recipe-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.video-wrapper {
+    flex: 1 1 500px;
+    max-width: 550px;
+}
+
+.video-wrapper video {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px -12px rgba(0,0,0,0.6);
+    display: block;
+}
+
+.ingredients-card {
+    flex: 1 1 350px;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    color: rgba(255,246,233,0.88);
+    padding: 30px 35px;
+    border-radius: 16px;
+    backdrop-filter: blur(2px);
+}
+
+.ingredients-card h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: #E8951E;
+    margin-top: 0;
+    letter-spacing: -0.01em;
+}
+
+.ingredients-card ol {
+    padding-left: 20px;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* ---------- size overrides ---------- */
+.hero{
+  padding: 40px 6vw;
+}
+
+h1{
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    margin: 0 0 12px;
+}
+
+.content {
+    gap: 25px;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+.content img{
+    width: 260px;
+    height: auto;
+}
+
+p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 18px 22px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 0.88rem;
+}
+
+.eyebrow{
+  font-size: 0.7rem;
+  padding: 6px 14px;
+  margin-bottom: 12px;
+}
