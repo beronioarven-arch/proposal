@@ -1,0 +1,258 @@
+body {
+    background-image: url(vegetables-set-left-black-slate.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+ *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Manrope', sans-serif;
+  color: #FFF6E9;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- header / navbar ---------- */
+.header{
+  background: #FFF6E9;
+  color: #1B2117;
+  padding: 20px 6vw;
+}
+
+.Navbar{
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.nav-lin,
+.nav-link{
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1B2117;
+  opacity: 0.75;
+}
+
+.nav-link:hover,
+.nav-lin:hover{
+  opacity: 1;
+  color: #C1440E;
+}
+
+/* ---------- hero ---------- */
+.hero{
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 0 6vw;
+}
+
+.content{
+  max-width: 640px;
+}
+
+.hero-copy .eyebrow{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,246,233,0.18);
+  color: #E8951E;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin-bottom: 26px;
+}
+
+.hero h1{
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: clamp(5rem, 5vw, 4rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: #fff;
+}
+
+.hero h1 .accent{
+  color: #E8951E;
+  display: block;
+}
+
+.sub{
+  max-width: 520px;
+  margin: 26px 0 36px;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  color: rgba(255,246,233,0.88);
+}
+
+.cta-row{
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn{
+  padding: 15px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.98rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary{
+  background: #C1440E;
+  color: #fff;
+  box-shadow: 0 10px 24px -8px rgba(193,68,14,0.65);
+}
+
+.btn-primary:hover{
+  transform: translateY(-2px);
+}
+
+.btn-ghost{
+  background: rgba(0,0,0,0.35);
+  color: #FFF6E9;
+  border: 1.5px solid rgba(255,246,233,0.18);
+}
+
+.btn-ghost:hover{
+  border-color: #E8951E;
+  color: #E8951E;
+  transform: translateY(-2px);
+}
+
+
+.hero-logo{
+  position: absolute;
+  right: 8vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.6);
+  animation: spin-logo 12s linear infinite;
+  }
+
+  @keyframes spin-logo{
+  from{
+    transform: translateY(-50%) rotate(0deg); 
+  }
+  to{
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+
+/* ahhhh basta button to sa gilid  */
+.menu-btn{
+  background: none;
+  border: none; 
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #cf4319;
+  opacity: 0.85;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.menu-btn:hover{
+  opacity: 1;
+  color: #C1440E;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  background:#141414;
+  color: #FFF6E9;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 100;
+  box-shadow: 4px 0 24px rgba(0,0,0,0.2);
+}
+
+.sidebar.open{
+  transform: translateX(0);
+}
+
+.sidebar-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(241, 234, 234, 0.1);
+    font-size: 1.0rem;
+
+}
+
+.sidebar-close{
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #1B2117;
+}
+
+.sidebar-link{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 24px;
+  font-weight: 600;
+  color: #FFF6E9;
+  border-bottom: 1px solid rgba(235, 223, 223, 0.2);
+}
+
+.sidebar-link:hover{
+  background: rgba(0,0,0,0.05);
+  color: #C1440E;
+}
+
+.sidebar-icon{
+  font-size: 1.3rem;
+}
+
+.sidebar-overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 99;
+}
+
+.sidebar-overlay.show{
+  display: block;
+}
+
+.sidebar-icon{
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 4px;
+}
