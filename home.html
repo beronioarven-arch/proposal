@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar | Code</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<body class="page0"> 
+<header class="header">
+    <nav class="Navbar">
+    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+    <a href="#Services" class="nav-link">Services</a>
+    <a href="#About" class="nav-link">About</a>
+    <a href="#Contact" class="nav-link">Contact</a>
+</header>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <span>Explore Cuisines</span>
+        <button class="sidebar-close" onclick="toggleSidebar()">×</button>
+    </div>
+    <a href="homepage2.html#philippines" class="sidebar-link">
+    <img src="philippine.jpg" class="sidebar-icon" alt="Philippines">
+    Philippines
+
+    </a>
+    <a href="homepage2.html#japan" class="sidebar-link">
+<img src="jap.jfif" class="sidebar-icon" alt="Japan">Japan
+
+    <a href="homepage2.html#italy" class="sidebar-link">
+        <img src="italy.jpg" class="sidebar-icon" alt="Italy">
+        Italy
+    </a>
+    <a href="homepage2.html#mexico" class="sidebar-link">
+        <img src="mexico.jpg" class="sidebar-icon" alt="Mexico">
+        Mexico
+    </a>
+</aside>
+
+<script>
+ function toggleSidebar(){
+    document.getElementById('sidebar').classList.toggle('open');
+    document.getElementById('sidebarOverlay').classList.toggle('show');
+}
+</script>
+<section class="hero">
+    <div class="content">
+        <div class="hero-copy">
+            <div class="eyebrow">Local Eats, Global Bites</div>
+            <h1>Taste Beyond <span class="accent">Borders</span></h1>
+            <p class="sub">A handful of  local favorites - paired with a taste of Japan, 
+                Mexico, and Italy </p>
+            <div class="cta-row">
+                <a href="homepage2.html" class="btn btn-primary">Browse Menu →</a>
+                <a href="FAIL.html" class="btn btn-ghost">View Specialties</a> 
+            </div>
+        </div>
+    </div>
+    <img src="logo.png" alt="Taste Beyond Borders logo" class="hero-logo">
+</section> 
+</body>
+</html> 
